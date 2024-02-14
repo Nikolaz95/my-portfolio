@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 
 //import css
@@ -17,7 +17,7 @@ import Figma from '../assets/images/icon-Figma.gif';
 //import icon react
 import { IoIosArrowForward } from "react-icons/io";
 
-const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown, setShowDropdown, isSideMenuOpen }) => {
+const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown, setShowDropdown, isSideMenuOpen, setOpenSideMenu }) => {
     useEffect(() => {
         if (isSideMenuOpen) {
             document.body.classList.add('sidebar-active');
@@ -27,9 +27,30 @@ const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown
     }, [isSideMenuOpen]);
 
 
+    /* klick outside to close */
+
+    const menuRef = useRef();
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                // Use the received `setOpenSideMenu` prop to update state
+                setOpenSideMenu(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [menuRef, setOpenSideMenu]);
+
+
+
     return (
         <div>
-            <div className={`navbar ${isSideMenuOpen ? 'active' : 'close'}`}>
+            <div className={`navbar ${isSideMenuOpen ? 'active' : 'close'}`} ref={menuRef}>
                 <ul>
                     <li>Home</li>
                     <li onClick={scrollToAboutMe}>About Me</li>

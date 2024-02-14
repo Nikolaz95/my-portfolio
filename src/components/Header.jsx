@@ -30,6 +30,7 @@ const Header = ({ scrollToAboutMe, scrollToMyWork, scrollToContact }) => {
                         setShowDropdown={setShowDropdown}
                         isSideMenuOpen={isSideMenuOpen}
                         setIsSideMenuOpen={setIsSideMenuOpen}
+                        setOpenSideMenu={setIsSideMenuOpen}
                         scrollToAboutMe={scrollToAboutMe}
                         scrollToMyWork={scrollToMyWork}
                         scrollToContact={scrollToContact} />
