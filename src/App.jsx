@@ -1,34 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useRef, useState } from 'react';
+
+import Header from './components/Header';
+
+
+
+//import css
 import './App.css'
+//import video/pictures
+import BackgroundVideo from './assets/images/background-video.mp4';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  /* const aboutMeRef = useRef(null);
+  const myWorkRef = useRef(null);
+  const contactRef = useRef(null); */
+
+  /*  const scrollToAboutMe = () => aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); */
+  /*  const scrollToMyWork = () => myWorkRef.current.scrollIntoView({ behavior: 'smooth' }); */
+  /*  const scrollToContact = () => contactRef.current.scrollIntoView({ behavior: 'smooth' }); */
+
+  /* const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  }; */
+
+  /*  useEffect(() => {
+     window.addEventListener('scroll', handleScroll);
+     return () => {
+       window.removeEventListener('scroll', handleScroll);
+     };
+   }, []); */
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <video id="background-video" autoPlay loop muted>
+        <source src={BackgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <Header />
+
+    </div>
   )
 }
 
