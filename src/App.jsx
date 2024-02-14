@@ -8,6 +8,11 @@ import Header from './components/Header';
 import './App.css'
 //import video/pictures
 import BackgroundVideo from './assets/images/background-video.mp4';
+import Content from './components/Content';
+import AboutMe from './components/AboutMe';
+import MyWork from './components/MyWork';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -39,6 +44,11 @@ function App() {
       </video>
 
       <Header />
+      <Content />
+      <AboutMe />
+      <MyWork />
+      <ContactMe />
+      <Footer />
 
     </div>
   )

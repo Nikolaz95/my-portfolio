@@ -1,0 +1,572 @@
+
+
+.main-myWorkcontent {
+    padding: 60px 20px;
+
+}
+
+.title-work {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.MyWork-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+
+.recentWork-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 440px;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    background: rgba(40, 94, 174, 0.248);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(13.8px);
+}
+
+
+.recentWork-card img {
+    border-radius: 20px;
+}
+
+
+.recent-workImg {
+    width: 310px;
+    height: 350px;
+}
+
+.MyworkCard-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.quick-view {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.quickView-btn {
+    cursor: pointer;
+}
+
+.icon-arrow, .quickView-btn {
+    cursor: pointer;
+}
+
+
+/* modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-active{
+    display: flex;
+}
+
+  /* kod da ne mogu pomjerati s strane dok je modal aktiviran */
+  body.modal-active {
+    overflow: hidden;
+  }
+
+/* inner modal content style */
+.modal-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 30px;
+    width: 800px;
+    height: 480px;
+}
+
+.workImg-activeModal {
+    width: 310px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+
+
+.modalright {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.thngl-modal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    gap: 5px;
+    justify-items: center;
+}
+
+
+.skils-iconModal {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.gitgub-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.democode-btn {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* close btn u modalu */
+.close-btnX {
+    position: relative;
+    top: -204px;
+    left: 770px;
+    font-size: 20px;
+    color: rgb(135, 0, 0);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .MyWork-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 930px) {
+    .modal-active {
+        display: flex;
+    }
+
+   
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 20px;
+        background-color: bisque;
+        border-radius: 30px;
+        width: 600px;
+        height: 880px;
+    }
+
+    .close-btnX {
+        position: relative;
+        top: -417px;
+        left: 580px;
+        font-size: 20px;
+        color: rgb(135, 0, 0);
+        cursor: pointer;
+    }
+
+    .workImg-activeModal {
+        border-radius: 20px;
+        width: 370px;
+        height: 400px;
+    }
+
+
+    .modalright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalInfo-title {
+        text-align: center;
+    }
+    
+    
+}
+
+
+
+@media only screen and (max-width: 730px) {
+    .MyWork-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+
+    /* modal active code */
+    .modal-active {
+        display: flex;
+    }
+
+   
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: bisque;
+        border-radius: 30px;
+        width: 500px;
+        height: 800px;
+    }
+
+    .close-btnX {
+        position: relative;
+        top: -377px;
+        left: 482px;
+        font-size: 20px;
+        color: rgb(135, 0, 0);
+        cursor: pointer;
+    }
+
+    .workImg-activeModal {
+        border-radius: 20px;
+        width: 300px;
+        height: 350px;
+    }
+
+
+    .modalright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalInfo-title, .modalInfo-titleTeh {
+        text-align: center;
+    }
+
+    /* .modalInfo-titleTeh, .thngl-modal{
+        display: none;
+    } */
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    /* modal active code */
+    .modal-active {
+        display: flex;
+    }
+
+   
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: bisque;
+        border-radius: 30px;
+        width: 360px;
+        height: 770px;
+    }
+
+    .close-btnX {
+        display: none;
+        position: relative;
+        top: -350px;
+        left: 392px;
+        font-size: 20px;
+        color: rgb(135, 0, 0);
+        cursor: pointer;
+    }
+
+    .workImg-activeModal {
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .modalright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalInfo-title, .modalInfo-titleTeh {
+        text-align: center;
+    }
+
+    /* .modalInfo-titleTeh, .thngl-modal{
+        display: none;
+    } */
+}
+
+
+@media only screen and (max-width: 430px) {
+
+    /* modal active code */
+    .modal-active {
+        display: flex;
+    }
+
+   
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 10px;
+        background-color: bisque;
+        border-radius: 30px;
+        width: 350px;
+        height: 655px;
+    }
+
+    .close-btnX {
+        display: none;
+        position: relative;
+        top: -350px;
+        left: 392px;
+        font-size: 20px;
+        color: rgb(135, 0, 0);
+        cursor: pointer;
+    }
+
+    .workImg-activeModal {
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .modalright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalInfo-title, .modalInfo-titleTeh {
+        text-align: center;
+    }
+
+    .modalInfo-titleTeh, .thngl-modal{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .MyWork-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .recentWork-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 400px;
+        gap: 10px;
+        padding: 20px;
+        color: white;
+        background: rgba(40, 94, 174, 0.248);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(13.8px);
+    }
+
+    .recent-workImg {
+        width: 280px;
+        height: 300px;
+    }
+
+    /* modal active code */
+    .modal-active {
+        display: flex;
+    }
+
+   
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 10px;
+        background-color: bisque;
+        border-radius: 30px;
+        width: 320px;
+        height: 655px;
+    }
+
+    .close-btnX {
+        display: none;
+        position: relative;
+        top: -350px;
+        left: 392px;
+        font-size: 20px;
+        color: rgb(135, 0, 0);
+        cursor: pointer;
+    }
+
+    .workImg-activeModal {
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .modalright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalInfo-title, .modalInfo-titleTeh {
+        text-align: center;
+    }
+
+    .modalInfo-titleTeh, .thngl-modal{
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 350px) {
+    .MyWork-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .recentWork-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 380px;
+        gap: 10px;
+        padding: 20px;
+        color: white;
+        background: rgba(40, 94, 174, 0.248);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(13.8px);
+    }
+
+    .recent-workImg {
+        width: 230px;
+        height: 270px;
+    }
+
+
+    @media only screen and (max-width: 330px) {
+        /* modal active code */
+    .modal-active {
+        display: flex;
+    }
+
+   
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 40px 10px;
+        background-color: bisque;
+        border-radius: 30px;
+        width: 300px;
+        height: 655px;
+    }
+
+    .close-btnX {
+        display: none;
+        position: relative;
+        top: -350px;
+        left: 392px;
+        font-size: 20px;
+        color: rgb(135, 0, 0);
+        cursor: pointer;
+    }
+
+    .workImg-activeModal {
+        border-radius: 20px;
+        width: 270px;
+        height: 300px;
+    }
+
+
+    .modalright {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modalInfo-title, .modalInfo-titleTeh {
+        text-align: center;
+    }
+
+    .modalInfo-titleTeh, .thngl-modal{
+        display: none;
+    }
+    }
+
+
+    
+
+
+}

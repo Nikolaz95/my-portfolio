@@ -1,0 +1,155 @@
+
+
+
+.main-AboutContent {
+    padding: 20px;
+}
+
+.aboutMe-mainContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+.profile-img {
+    width: 500px;
+    height: 600px;
+    border-radius: 40px;
+  }
+
+
+.aboutMContent-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.title-AboutMe {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-AboutMe {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#aboutme {
+    text-align: center;
+}
+
+
+.myskills-content {
+    text-align: center;
+}
+
+.title-MySkills {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+
+.mySkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.linkbox img {
+    width: 100px;
+}
+
+.linkbox img:hover {
+    transition-duration: 1s;
+    transform: scale(1.5);
+}
+
+
+@media only screen and (max-width: 840px) {
+    .aboutMe-mainContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 840px) {
+    .aboutMe-mainContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .linkbox img{
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+
+@media only screen and (max-width: 350px) {
+    .aboutMe-mainContent {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 280px;
+        height: 550px;
+        border-radius: 40px;
+    }
+
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .linkbox img{
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+
+
+
+
+
+
+
