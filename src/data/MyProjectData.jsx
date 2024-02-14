@@ -22,7 +22,7 @@ const MyProjectData = [
         ImgProject: Projekt1,
         description: "The possibility of creating a personal account, Log in, Log Out. Chat with others in real time. Possibility of changing the username, password and deleting the existing account. It is also possible to set a picture for the profile.",
         skills: [Html, Css, JavaScript, ReactNative],
-        demo: "https://www.youtube.com/",
+        demo: "https://github.com/Nikolaz95/Chat-app",
         source: "https://github.com/Nikolaz95/Chat-app"
     },
     {
