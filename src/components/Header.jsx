@@ -8,7 +8,8 @@ import Logo from '../assets/images/logo-developer.gif';
 //import icon react
 import { IoIosArrowForward } from "react-icons/io";
 
-const Header = () => {
+const Header = ({ scrollToAboutMe, scrollToMyWork, scrollToContact }) => {
+
     const [showDropdown, setShowDropdown] = useState(false);
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
@@ -29,9 +30,9 @@ const Header = () => {
                         setShowDropdown={setShowDropdown}
                         isSideMenuOpen={isSideMenuOpen}
                         setIsSideMenuOpen={setIsSideMenuOpen}
-                        /* scrollToAboutMe={scrollToAboutMe} */
-                        /* scrollToMyWork={scrollToMyWork} */
-                        /* scrollToContact={scrollToContact}  */ />
+                        scrollToAboutMe={scrollToAboutMe}
+                        scrollToMyWork={scrollToMyWork}
+                        scrollToContact={scrollToContact} />
                 </div>
                 <div className={`ham-menu ${isSideMenuOpen ? 'active' : ''}`} onClick={toggleSideMenu}>
                     <span className="bar1"></span>

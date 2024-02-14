@@ -17,9 +17,9 @@ import ReactJS from '../assets/images/icons-ReactJs.gif';
 import ReactNative from '../assets/images/icons-react-native.png';
 import Figma from '../assets/images/icon-Figma.gif';
 
-const AboutMe = () => {
+const AboutMe = ({ aboutMeRef }) => {
     return (
-        <main className="main-AboutContent" /* ref={aboutMeRef} */>
+        <main className="main-AboutContent" ref={aboutMeRef}>
             <div className="aboutMe-mainContent">
                 <div className="aboutMe-left">
                     <img src={Ja} alt="here should be a image" className='profile-img' />

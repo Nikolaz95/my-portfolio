@@ -17,7 +17,7 @@ import Figma from '../assets/images/icon-Figma.gif';
 //import icon react
 import { IoIosArrowForward } from "react-icons/io";
 
-const NavBar = ({ showDropdown, setShowDropdown, isSideMenuOpen, }) => {
+const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown, setShowDropdown, isSideMenuOpen }) => {
     useEffect(() => {
         if (isSideMenuOpen) {
             document.body.classList.add('sidebar-active');
@@ -32,9 +32,8 @@ const NavBar = ({ showDropdown, setShowDropdown, isSideMenuOpen, }) => {
             <div className={`navbar ${isSideMenuOpen ? 'active' : 'close'}`}>
                 <ul>
                     <li>Home</li>
-                    <li /* onClick={scrollToAboutMe} */>About Me</li>
+                    <li onClick={scrollToAboutMe}>About Me</li>
                     <li onClick={() => setShowDropdown(!showDropdown)}>My skills <IoIosArrowForward className={showDropdown ? "arrowDrp rotatedArrow" : "arrowDrp"} /></li>
-                    {/* <IoIosArrowForward className={showDropdown ? "arrowDrp rotatedArrow" : "arrowDrp"} /> */}
                     {showDropdown && (
 
                         <div className="dropdown-content">
@@ -49,8 +48,8 @@ const NavBar = ({ showDropdown, setShowDropdown, isSideMenuOpen, }) => {
                         </div>
 
                     )}
-                    <li /* onClick={scrollToMyWork} */>My work</li>
-                    <li /* onClick={scrollToContact} */>Contact me</li>
+                    <li onClick={scrollToMyWork}>My work</li>
+                    <li onClick={scrollToContact}>Contact me</li>
                 </ul>
             </div>
 

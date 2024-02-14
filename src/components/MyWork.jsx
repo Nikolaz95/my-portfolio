@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 
 
-
+//import fetch data
 import projectsData from '../data/MyProjectData';
 
 //import css
@@ -15,7 +15,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaWindowClose } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
-const MyWork = () => {
+const MyWork = ({ myWorkRef }) => {
     const [openModal, setOpenModal] = useState(false);
     const [modalProject, setModalProject] = useState(null);
     const [projects, setProjects] = useState([]);
@@ -64,7 +64,7 @@ const MyWork = () => {
     }, [menuRef]);
 
     return (
-        <article className='main-myWorkcontent' /* ref={myWorkRef} */>
+        <article className='main-myWorkcontent' ref={myWorkRef}>
             <h1 className="title-work">My Work</h1>
             <div className="MyWork-content">
                 {projectsData.map((project) => (

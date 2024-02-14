@@ -8,7 +8,7 @@ import { FaCheck } from "react-icons/fa";
 import { MdOutlineError } from "react-icons/md";
 
 
-const ContactMe = () => {
+const ContactMe = ({ contactRef }) => {
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -164,7 +164,7 @@ const ContactMe = () => {
         }
     };
     return (
-        <article className="content-Contact" /* ref={contactRef} */>
+        <article className="content-Contact" ref={contactRef}>
             <div className="contant-konteiner">
                 <div className="bg-picture">
                     <h1>Contact Me</h1>
