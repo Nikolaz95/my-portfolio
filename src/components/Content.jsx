@@ -14,7 +14,7 @@ import "./Content.css"
 
 const Content = () => {
     const [text] = useTypewriter({
-        words: [' Frontend Utvecklare', ' Webbdesigner'],
+        words: ['Frontend Utvecklare', 'Webbdesigner'],
         loop: {},
         typeSpeed: 100,
         deleteSpeed: 40,
@@ -22,12 +22,11 @@ const Content = () => {
     return (
         <main className="main-content">
             <div className="tekst left-content">
-                <p className='anime-tekst'>Hej test</p>
+                <p className='anime-tekst'>Hej</p>
                 <p className='anime-tekst'>Jag heter Nikola Zovko</p>
                 <div className='tekstAnime'>
-                    <span className='anime-tekst'>Jag är<span>{text}
-                        <span><Cursor cursorStyle="|"></Cursor> </span>
-                    </span></span>
+                    <span className='anime-tekst'>Jag är<span>{text}<span><Cursor cursorStyle="/"></Cursor></span></span>
+                    </span>
                 </div>
 
                 <div className="social-media">
