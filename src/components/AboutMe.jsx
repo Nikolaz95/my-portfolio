@@ -16,6 +16,14 @@ import JavaScript from '../assets/images/icon-JavaScript.gif';
 import ReactJS from '../assets/images/icons-ReactJs.gif';
 import ReactNative from '../assets/images/icons-react-native.png';
 import Figma from '../assets/images/icon-Figma.gif';
+import NodeJS from '../assets/images/icon-nodejs.png';
+import MongoDb from '../assets/images/mongodb.png';
+import PostMan from '../assets/images/icon-postman.png';
+import MaterialUI from '../assets/images/material-UI.png';
+
+
+
+
 
 const AboutMe = ({ aboutMeRef }) => {
     return (
@@ -58,6 +66,22 @@ const AboutMe = ({ aboutMeRef }) => {
 
                             <div className="linkbox">
                                 <img src={Figma} alt="" className='skils-icon' title="Figma" />
+                            </div>
+
+                            <div className="linkbox">
+                                <img src={NodeJS} alt="" className='skils-icon' title="Node JS" />
+                            </div>
+
+                            <div className="linkbox">
+                                <img src={MongoDb} alt="" className='skils-icon' title="Mongo DB" />
+                            </div>
+
+                            <div className="linkbox">
+                                <img src={PostMan} alt="" className='skils-icon' title="PostMan" />
+                            </div>
+
+                            <div className="linkbox">
+                                <img src={MaterialUI} alt="" className='skils-icon' title="Material UI" />
                             </div>
                         </div>
                     </div>

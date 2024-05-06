@@ -13,6 +13,10 @@ import ReactNative from '../assets/images/icons-react-native.png';
 import GitHub from '../assets/images/icon-github.png';
 import GitBash from '../assets/images/icons-git.png';
 import Figma from '../assets/images/icon-Figma.gif';
+import NodeJS from '../assets/images/icon-nodejs.png';
+import MongoDb from '../assets/images/mongodb.png';
+import PostMan from '../assets/images/icon-postman.png';
+import MaterialU from '../assets/images/material-UI.png';
 
 //import icon react
 import { IoIosArrowForward } from "react-icons/io";
@@ -66,6 +70,10 @@ const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown
                             <p>Git Hub<img src={GitHub} alt="" className='mySkils-icon' title="Git Hub" /></p>
                             <p>Git Bash<img src={GitBash} alt="" className='mySkils-icon' title="Git Bash" /></p>
                             <p>Figma<img src={Figma} alt="" className='mySkils-icon' title="Figma" /></p>
+                            <p>Node JS<img src={NodeJS} alt="" className='mySkils-icon' title="Node JS" /></p>
+                            <p>MongoDB<img src={MongoDb} alt="" className='mySkils-icon' title="MongoDB" /></p>
+                            <p>PostMan<img src={PostMan} alt="" className='mySkils-icon' title="PostMan" /></p>
+                            <p>Material UI<img src={MaterialU} alt="" className='mySkils-icon' title="Material UI" /></p>
                         </div>
 
                     )}
