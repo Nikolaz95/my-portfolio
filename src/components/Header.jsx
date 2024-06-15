@@ -8,7 +8,7 @@ import Logo from '../assets/images/logo-developer.gif';
 //import icon react
 import { IoIosArrowForward } from "react-icons/io";
 
-const Header = ({ scrollToAboutMe, scrollToMyWork, scrollToContact }) => {
+const Header = ({ scrollToAboutMe, scrollToTimeline, scrollToMyWork, scrollToContact }) => {
 
     const [showDropdown, setShowDropdown] = useState(false);
     const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -32,6 +32,7 @@ const Header = ({ scrollToAboutMe, scrollToMyWork, scrollToContact }) => {
                         setIsSideMenuOpen={setIsSideMenuOpen}
                         setOpenSideMenu={setIsSideMenuOpen}
                         scrollToAboutMe={scrollToAboutMe}
+                        scrollToTimeline={scrollToTimeline}
                         scrollToMyWork={scrollToMyWork}
                         scrollToContact={scrollToContact} />
                 </div>

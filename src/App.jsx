@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import Header from './components/Header';
 import Content from './components/Content';
 import AboutMe from './components/AboutMe';
+import Timeline from './components/Timeline';
 import MyWork from './components/MyWork';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
@@ -10,6 +11,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 //import css
 import './App.css'
+
 //import video/pictures
 import BackgroundVideo from './assets/images/background-video.mp4';
 
@@ -17,10 +19,12 @@ import BackgroundVideo from './assets/images/background-video.mp4';
 
 function App() {
   const aboutMeRef = useRef(null);
+  const timeLineRef = useRef(null);
   const myWorkRef = useRef(null);
   const contactRef = useRef(null);
 
   const scrollToAboutMe = () => aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToTimeline = () => timeLineRef.current.scrollIntoView({ behavior: 'smooth' });
   const scrollToMyWork = () => myWorkRef.current.scrollIntoView({ behavior: 'smooth' });
   const scrollToContact = () => contactRef.current.scrollIntoView({ behavior: 'smooth' });
 
@@ -43,9 +47,11 @@ function App() {
         Your browser does not support the video tag.
       </video>
       {scrollPosition > 100 && <ScrollToTop />}
-      <Header scrollToAboutMe={scrollToAboutMe} scrollToMyWork={scrollToMyWork} scrollToContact={scrollToContact} />
+      <Header scrollToAboutMe={scrollToAboutMe} scrollToTimeline={scrollToTimeline}
+        scrollToMyWork={scrollToMyWork} scrollToContact={scrollToContact} />
       <Content />
       <AboutMe aboutMeRef={aboutMeRef} />
+      <Timeline timeLineRef={timeLineRef} />
       <MyWork myWorkRef={myWorkRef} />
       <ContactMe contactRef={contactRef} />
       <Footer />

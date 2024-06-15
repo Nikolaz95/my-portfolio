@@ -21,7 +21,7 @@ import MaterialU from '../assets/images/material-UI.png';
 //import icon react
 import { IoIosArrowForward } from "react-icons/io";
 
-const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown, setShowDropdown, isSideMenuOpen, setOpenSideMenu }) => {
+const NavBar = ({ scrollToAboutMe, scrollToTimeline, scrollToMyWork, scrollToContact, showDropdown, setShowDropdown, isSideMenuOpen, setOpenSideMenu }) => {
     useEffect(() => {
         if (isSideMenuOpen) {
             document.body.classList.add('sidebar-active');
@@ -77,6 +77,7 @@ const NavBar = ({ scrollToAboutMe, scrollToMyWork, scrollToContact, showDropdown
                         </div>
 
                     )}
+                    <li onClick={scrollToTimeline}>Timeline</li>
                     <li onClick={scrollToMyWork}>My work</li>
                     <li onClick={scrollToContact}>Contact me</li>
                 </ul>

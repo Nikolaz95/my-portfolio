@@ -1,0 +1,22 @@
+
+
+.Timeline-mainContent {
+    background-color: transparent;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(13.8px);
+}
+
+.title-Timeline {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.dataClass {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
