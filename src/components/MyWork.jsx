@@ -105,8 +105,8 @@ const MyWork = ({ myWorkRef }) => {
                             </div>
                             <h2 className='modalInfo-title'>GitHub Code:</h2>
                             <div className='gitgub-link'>
-                                <a href={modalProject.source}>
-                                    <img src={GitHub} alt="" className='skils-iconModal' target="_blank" title="GitHub" />
+                                <a href={modalProject.source} target="_blank">
+                                    <img src={GitHub} alt="" className='skils-iconModal' title="GitHub" />
                                 </a>
                             </div>
                             {modalProject.demo && (

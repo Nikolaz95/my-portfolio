@@ -17,53 +17,20 @@ const SchoolIcon = () => (
 let timelineData = [
     {
         id: 0,
-        title: "Bilmekaniker",
-        location: "Zepce, Bosnien och Hercegovina",
-        description:
-            "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-        date: "2010-2013",
-        icon: "school",
-    },
-    {
-        id: 1,
-        title: "Snickare",
-        location: "Stockholm, Sverige",
-        description: "Rivning av rör, vattenledningar, tidigare installationer samt byggnader. Demontering av vattencentral. Bygga altan. Renovera kök.",
-        date: "2015 – 2016",
-        icon: "work",
-    },
-    {
-        id: 2,
-        title: "Snickare",
-        location: "Stockholm, Sverige",
-        description: "Rivning av rör, vattenledningar, tidigare installationer samt byggnader. Demontering av vattencentral. Bygga altan. Renovera kök.",
-        date: "2015 – 2016",
-        icon: "work",
-    },
-    {
-        id: 3,
-        title: "VVS-montör och Snickare",
-        location: "Stockholm, Sverige",
-        description:
-            "VVS-montering, riv, sanering. Montering av rör, förberedningar inför svets.",
-        date: "2018 Oktober – 2019 August",
-        icon: "work",
-    },
-    {
-        id: 4,
         title: "Frontendutvecklare",
         location: "Jensen Yrkeshögskola Stockholm, Sverige",
         description:
-            "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+            "Under våra studier på Jensen Yrkeshögskola Stockholm stötte vi först på HTML och CSS. Vi lärde oss även programmering i JavaScript. I JavaScript lärde vi oss att programmera och manipulera DOM. Vi lärde oss också webbdesign UX/UI med Figma. Sedan började vi programmera i React js och React Native",
         date: "2022 August - 2024 Juni",
         icon: "school",
     },
     {
-        id: 5,
+        id: 1,
         title: "Frontendutvecklare, Lia Praktik",
+        company: "Gardeco Datasystem AB",
         location: "Stockholm, Sverige",
         description:
-            "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+            "During my internship at Gardeco Datasystem AB, I worked on a checkout system. I worked with Html, Css, React Js, NodeJS and MongoDB. I also worked on a server that contained product data, purchase history and club members.",
         date: "2023 November - 2024 Maj",
         icon: "work",
     },

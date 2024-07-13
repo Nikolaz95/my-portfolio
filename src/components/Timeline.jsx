@@ -51,8 +51,9 @@ const Timeline = ({ timeLineRef }) => {
                         >
 
                             <h3 className="vertical-timeline-element-title">{item.title}</h3>
+                            <p id="companyName">{item.company}</p>
                             <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ex cupiditate. Aliquam obcaecati ipsum porro iste explicabo quaerat, culpa aliquid in numquam nihil et tempora quidem. Expedita modi placeat commodi asperiores eveniet unde. Atque, saepe eius ad libero nulla eaque, ex quis sunt labore laborum repellat. Amet cum nesciunt laboriosam!</p>
+                            <p>{item.description}</p>
                         </VerticalTimelineElement>
                     ))}
 

@@ -40,27 +40,27 @@ const MyProjectData = [
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",
-        skills: [Html, Css, JavaScript],
+        skills: [],
         demo: "",
-        source: "https://github.com/Nikolaz95/Another-project"
+        source: "https://github.com/Nikolaz95"
     },
     {
         id: 3,
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",
-        skills: [Html, Css, JavaScript],
+        skills: [],
         demo: "",
-        source: "https://github.com/Nikolaz95/Another-project"
+        source: "https://github.com/Nikolaz95"
     },
     {
         id: 4,
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",
-        skills: [Html, Css, JavaScript],
+        skills: [],
         demo: "",
-        source: "https://github.com/Nikolaz95/Another-project"
+        source: "https://github.com/Nikolaz95"
     },
 ]
 
