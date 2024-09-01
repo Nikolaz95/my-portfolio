@@ -4,6 +4,7 @@ import React from 'react'
 //img projekts
 import Projekt1 from '../assets/work-img/work-5.png';
 import Projekt2 from '../assets/work-img/Task-Todo-RJ.png';
+import Projekt3 from '../assets/work-img/Fast-Pizza.png';
 import ComingSoon from '../assets/work-img/work-1.png';
 
 // skils img 
@@ -15,6 +16,9 @@ import ReactNative from '../assets/images/icons-react-native.png';
 import GitHub from '../assets/images/icon-github.png';
 import GitBash from '../assets/images/icons-git.png';
 import Figma from '../assets/images/icon-Figma.gif';
+import TailwindCss from '../assets/images/tailwind-css.png';
+import rjRedux from '../assets/images/redux.png';
+
 
 const MyProjectData = [
     {
@@ -37,12 +41,12 @@ const MyProjectData = [
     },
     {
         id: 2,
-        title: "Coming Soon",
-        ImgProject: ComingSoon,
-        description: "Description for another project...",
-        skills: [],
-        demo: "",
-        source: "https://github.com/Nikolaz95"
+        title: "Fast Pizza RJ",
+        ImgProject: Projekt3,
+        description: "React js APP with React Redux. ",
+        skills: [JavaScript, ReactJS, rjRedux],
+        demo: "https://fast-pizzarj.netlify.app/",
+        source: "https://github.com/Nikolaz95/fast-pizza"
     },
     {
         id: 3,
