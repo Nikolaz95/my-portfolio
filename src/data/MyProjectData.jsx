@@ -5,6 +5,7 @@ import React from 'react'
 import Projekt1 from '../assets/work-img/work-5.png';
 import Projekt2 from '../assets/work-img/Task-Todo-RJ.png';
 import Projekt3 from '../assets/work-img/Fast-Pizza.png';
+import Projekt4 from '../assets/work-img/work-6.png';
 import ComingSoon from '../assets/work-img/work-1.png';
 
 // skils img 
@@ -18,6 +19,8 @@ import GitBash from '../assets/images/icons-git.png';
 import Figma from '../assets/images/icon-Figma.gif';
 import TailwindCss from '../assets/images/tailwind-css.png';
 import rjRedux from '../assets/images/redux.png';
+import supaBase from '../assets/images/icon-supabase.png';
+import rjQuery from '../assets/images/reactqury.png';
 
 
 const MyProjectData = [
@@ -50,12 +53,12 @@ const MyProjectData = [
     },
     {
         id: 3,
-        title: "Coming Soon",
-        ImgProject: ComingSoon,
-        description: "Description for another project...",
-        skills: [],
-        demo: "",
-        source: "https://github.com/Nikolaz95"
+        title: "Hotel Wild Oasis",
+        ImgProject: Projekt4,
+        description: "Full stack application, worked with Supabase database, Styled Components, React Quary. It is possible to create your own account, update it and also delete it. We can also make accommodation reservations, update and delete cabins in the application. We can see the attendance in the past days.",
+        skills: [ReactJS, rjRedux, supaBase, rjQuery],
+        demo: "https://nzhotel-wild-oasis-git-main-nikolas-projects-d50df3a6.vercel.app/login",
+        source: "https://github.com/Nikolaz95/hotel-wildOasis"
     },
     {
         id: 4,
