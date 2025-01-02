@@ -6,6 +6,8 @@ import Projekt1 from '../assets/work-img/work-5.png';
 import Projekt2 from '../assets/work-img/Task-Todo-RJ.png';
 import Projekt3 from '../assets/work-img/Fast-Pizza.png';
 import Projekt4 from '../assets/work-img/work-6.png';
+import Projekt5 from '../assets/work-img/Country-App.png';
+import Projekt6 from '../assets/work-img/Space-Tourism .png';
 import ComingSoon from '../assets/work-img/work-1.png';
 
 // skils img 
@@ -62,6 +64,26 @@ const MyProjectData = [
     },
     {
         id: 4,
+        title: "Country App",
+        ImgProject: Projekt5,
+        description: "If you're wanting to test your JavaScript skills this is the challenge for you. Use whichever JS framework you prefer and pull data from the REST Countries API.",
+        skills: [Html, Css, JavaScript, ReactJS],
+        demo: "https://react-js-country-app-git-main-nikolas-projects-d50df3a6.vercel.app/",
+        source: "https://github.com/Nikolaz95/ReactJS-CountryApp/tree/main"
+    },
+
+    {
+        id: 5,
+        title: "Space tourism",
+        ImgProject: Projekt6,
+        description: "This project is a fun collaboration with Scrimba and Kevin Powell! If you like, you can follow along and watch Kevin complete the project on Scrimba.",
+        skills: [Html, Css, JavaScript, ReactJS],
+        demo: "https://space-tourism-ashy-eta.vercel.app/",
+        source: "https://github.com/Nikolaz95/Space-Tourism/tree/main"
+    },
+
+    {
+        id: 6,
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",
