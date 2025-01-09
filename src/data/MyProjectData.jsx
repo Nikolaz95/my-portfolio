@@ -1,4 +1,3 @@
-import React from 'react'
 
 
 //img projekts
@@ -23,6 +22,7 @@ import TailwindCss from '../assets/images/tailwind-css.png';
 import rjRedux from '../assets/images/redux.png';
 import supaBase from '../assets/images/icon-supabase.png';
 import rjQuery from '../assets/images/reactqury.png';
+import storybook from '../assets/skill-img/Storybook.png';
 
 
 const MyProjectData = [
