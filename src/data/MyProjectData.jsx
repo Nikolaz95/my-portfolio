@@ -1,6 +1,7 @@
 
 
 //img projekts
+import Projekt0 from '../assets/work-img/myPortfolio.png';
 import Projekt1 from '../assets/work-img/work-5.png';
 import Projekt2 from '../assets/work-img/Task-Todo-RJ.png';
 import Projekt3 from '../assets/work-img/Fast-Pizza.png';
@@ -28,6 +29,15 @@ import storybook from '../assets/skill-img/Storybook.png';
 const MyProjectData = [
     {
         id: 0,
+        title: "My Portfolio",
+        ImgProject: Projekt0,
+        description: "My Portfolio project",
+        skills: [Html, Css, JavaScript, ReactNative],
+        demo: "https://nikolazovko-portfolio.netlify.app/",
+        source: "https://github.com/Nikolaz95/my-portfolio"
+    },
+    {
+        id: 1,
         title: "Chat App, React Native",
         ImgProject: Projekt1,
         description: "The possibility of creating a personal account, Log in, Log Out. Chat with others in real time. Possibility of changing the username, password and deleting the existing account. It is also possible to set a picture for the profile.",
@@ -36,7 +46,7 @@ const MyProjectData = [
         source: "https://github.com/Nikolaz95/Chat-app"
     },
     {
-        id: 1,
+        id: 2,
         title: "Task To-Do, React JS",
         ImgProject: Projekt2,
         description: "Task To-Do, ReactJS App with Local Storage. You can store all your Tasks.",
@@ -45,7 +55,7 @@ const MyProjectData = [
         source: "https://github.com/Nikolaz95/todoRJ"
     },
     {
-        id: 2,
+        id: 3,
         title: "Fast Pizza RJ",
         ImgProject: Projekt3,
         description: "React js APP with React Redux. ",
@@ -54,7 +64,7 @@ const MyProjectData = [
         source: "https://github.com/Nikolaz95/fast-pizza"
     },
     {
-        id: 3,
+        id: 4,
         title: "Hotel Wild Oasis",
         ImgProject: Projekt4,
         description: "Full stack application, worked with Supabase database, Styled Components, React Quary. It is possible to create your own account, update it and also delete it. We can also make accommodation reservations, update and delete cabins in the application. We can see the attendance in the past days.",
@@ -63,7 +73,7 @@ const MyProjectData = [
         source: "https://github.com/Nikolaz95/hotel-wildOasis"
     },
     {
-        id: 4,
+        id: 5,
         title: "Country App",
         ImgProject: Projekt5,
         description: "If you're wanting to test your JavaScript skills this is the challenge for you. Use whichever JS framework you prefer and pull data from the REST Countries API.",
@@ -73,7 +83,7 @@ const MyProjectData = [
     },
 
     {
-        id: 5,
+        id: 6,
         title: "Space tourism",
         ImgProject: Projekt6,
         description: "This project is a fun collaboration with Scrimba and Kevin Powell! If you like, you can follow along and watch Kevin complete the project on Scrimba.",
@@ -83,7 +93,7 @@ const MyProjectData = [
     },
 
     {
-        id: 6,
+        id: 7,
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",

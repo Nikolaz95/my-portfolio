@@ -34,6 +34,16 @@ let timelineData = [
         date: "2023 November - 2024 Maj",
         icon: "work",
     },
+    {
+        id: 2,
+        title: "Frontendutvecklare, Lia Praktik",
+        company: "Wacoco HQ",
+        location: "Stockholm, Sverige",
+        description:
+            "During my internship at Gardeco Datasystem AB, I worked on a checkout system. I worked with Html, Css, React Js, NodeJS and MongoDB. I also worked on a server that contained product data, purchase history and club members.",
+        date: "2025 Oktober - ",
+        icon: "work",
+    },
 ];
 
 export default timelineData;

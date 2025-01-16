@@ -8,7 +8,6 @@ import projectsData from '../data/MyProjectData';
 //import css
 import "./MyWork.css"
 //import img
-import projekt1 from '../assets/work-img/work-5.png';
 import GitHub from '../assets/images/icon-github.png';
 // import icons
 import { FaArrowRight } from "react-icons/fa";
@@ -18,7 +17,6 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 const MyWork = ({ myWorkRef }) => {
     const [openModal, setOpenModal] = useState(false);
     const [modalProject, setModalProject] = useState(null);
-    const [projects, setProjects] = useState([]);
 
 
     /* open modal function */
@@ -38,8 +36,6 @@ const MyWork = ({ myWorkRef }) => {
     /* close modal function */
     const toggleCloseModal = () => {
         setOpenModal(false)
-
-
     };
 
 
@@ -65,7 +61,7 @@ const MyWork = ({ myWorkRef }) => {
 
     return (
         <article className='main-myWorkcontent' ref={myWorkRef}>
-            <h1 className="title-work">My Work</h1>
+            <h1 className="title-work">My Work ({projectsData.length}) </h1>
             <div className="MyWork-content">
                 {projectsData.map((project) => (
                     <div key={project.id} className="recentWork-card">
