@@ -31,7 +31,7 @@ const MyProjectData = [
         id: 0,
         title: "My Portfolio",
         ImgProject: Projekt0,
-        description: "My Portfolio project",
+        description: "My Portfolio project. This is my personal website where you can meet me and see what I`m doing with. Contact form working and I will be contact by filing the form.",
         skills: [Html, Css, JavaScript, ReactNative],
         demo: "https://nikolazovko-portfolio.netlify.app/",
         source: "https://github.com/Nikolaz95/my-portfolio"

@@ -40,7 +40,7 @@ let timelineData = [
         company: "Wacoco HQ",
         location: "Stockholm, Sverige",
         description:
-            "During my internship at Gardeco Datasystem AB, I worked on a checkout system. I worked with Html, Css, React Js, NodeJS and MongoDB. I also worked on a server that contained product data, purchase history and club members.",
+            "During my internship at Wacoco HQ AB,",
         date: "2025 Oktober - ",
         icon: "work",
     },

@@ -14,6 +14,7 @@ import './App.css'
 
 //import video/pictures
 import BackgroundVideo from './assets/images/background-video.mp4';
+import Contact from './components/ContactComponent/Contact';
 
 
 
@@ -53,7 +54,8 @@ function App() {
       <AboutMe aboutMeRef={aboutMeRef} />
       <Timeline timeLineRef={timeLineRef} />
       <MyWork myWorkRef={myWorkRef} />
-      <ContactMe contactRef={contactRef} />
+      <Contact contactRef={contactRef} />
+      {/* <ContactMe contactRef={contactRef} /> */}
       <Footer />
 
     </div>

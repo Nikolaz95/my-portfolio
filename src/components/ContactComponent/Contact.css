@@ -1,0 +1,124 @@
+
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 20px;
+
+}
+
+
+.contantConteiner {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: rgb(255 255 255 / 30%) 0px 5px 15px;
+    background: rgba(255, 255, 255, 0.17);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.3px);
+-webkit-backdrop-filter: blur(8.3px);
+}
+
+.bgPicture {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-color: #d4d6cf;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    background-image: url(./assets/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   /*  background-position: center; */
+    border-radius: 10px 10px 0 0;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 450px;
+    padding: 10px 20px ;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+label, span{
+    /* font-size: 20px;
+    padding: 5px; */
+    display: flex;
+    font-size: 20px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input {
+    height:25px ;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.textTitleForm {
+    color: black;
+}
+.errorTextContact {
+    text-align: center;
+    color: red;
+}
+
+textarea {
+    border-radius: 20px;
+    padding: 10px;
+    height:100px;
+}
+
+.contact-SubmiBtn {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+
+
+@media only screen and (max-width: 490px) {
+    .formSection {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        padding: 10px 20px;
+        border-radius: 0 0 10px 10px;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .formSection {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 10px 20px;
+        border-radius: 0 0 10px 10px;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .form-Contact {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 10px 20px;
+        border-radius: 0 0 10px 10px;
+        color: white;
+    }
+}
