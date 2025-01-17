@@ -7,10 +7,12 @@ import Ja from '../assets/images/ja1.png';
 import LinkeDin from '../assets/images/icon-linkedin.png';
 import Gmail from '../assets/images/icon-gmail.png';
 import GitHub from '../assets/images/icon-github.png';
+import CV from "../assets/NikolaZovkoCV.pdf";
 
 
 //import css
 import "./Content.css"
+import DownloadCv from './DownloadPdf/DownloadCv';
 
 const Content = () => {
     const [text] = useTypewriter({
@@ -25,7 +27,9 @@ const Content = () => {
                 <p className='anime-tekst'>Hej</p>
                 <p className='anime-tekst'>Jag heter Nikola Zovko</p>
                 <div className='tekstAnime'>
-                    <span className='anime-tekst'>Jag är<span>{text}<span><Cursor cursorStyle="/"></Cursor></span></span>
+                    <span className='anime-tekst'>Jag är<span>{text}
+                        <span><Cursor cursorStyle="/"></Cursor></span>
+                    </span>
                     </span>
                 </div>
 
@@ -46,6 +50,7 @@ const Content = () => {
                         </a>
                     </div>
                 </div>
+                <DownloadCv />
             </div>
 
 
