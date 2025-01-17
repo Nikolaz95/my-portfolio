@@ -8,6 +8,8 @@ import Projekt3 from '../assets/work-img/Fast-Pizza.png';
 import Projekt4 from '../assets/work-img/work-6.png';
 import Projekt5 from '../assets/work-img/Country-App.png';
 import Projekt6 from '../assets/work-img/Space-Tourism .png';
+import Projekt7 from '../assets/work-img/work-7.png';
+
 import ComingSoon from '../assets/work-img/work-1.png';
 
 // skils img 
@@ -32,7 +34,7 @@ const MyProjectData = [
         title: "My Portfolio",
         ImgProject: Projekt0,
         description: "My Portfolio project. This is my personal website where you can meet me and see what I`m doing with. Contact form working and I will be contact by filing the form.",
-        skills: [Html, Css, JavaScript, ReactNative],
+        skills: [Html, Css, JavaScript, ReactJS],
         demo: "https://nikolazovko-portfolio.netlify.app/",
         source: "https://github.com/Nikolaz95/my-portfolio"
     },
@@ -94,6 +96,16 @@ const MyProjectData = [
 
     {
         id: 7,
+        title: "Product list with cart",
+        ImgProject: Projekt7,
+        description: "Practice updating the UI in multiple places based on user actions. The starter download also includes a JSON file to help you practice populating the DOM dynamically. There is also custom bill. When a user confirm order it will get automatically his bill in pdf file.",
+        skills: [Html, Css, JavaScript, ReactJS, rjRedux],
+        demo: "https://react-js-cart.vercel.app/",
+        source: "https://github.com/Nikolaz95/ReactJS-Cart"
+    },
+
+    {
+        id: 8,
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",
