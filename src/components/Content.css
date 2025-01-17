@@ -190,6 +190,18 @@ label, span {
     .linkbox img {
         height: 70px;
     }
+
+    .anime-tekst {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textAnimated {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 300px;
+    }
 }
 
 

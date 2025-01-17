@@ -27,7 +27,7 @@ const Content = () => {
                 <p className='anime-tekst'>Hej</p>
                 <p className='anime-tekst'>Jag heter Nikola Zovko</p>
                 <div className='tekstAnime'>
-                    <span className='anime-tekst'>Jag är<span>{text}
+                    <span className='anime-tekst'>Jag är<span className='textAnimated'>{text}
                         <span><Cursor cursorStyle="/"></Cursor></span>
                     </span>
                     </span>
