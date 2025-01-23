@@ -91,21 +91,21 @@ const MySkills = [
         title: "GitBash",
         skillImg: GitBash
     },
-    {
+    /* {
         id: 14,
         title: "React qury",
         skillImg: rjQuery
-    },
+    }, */
     {
         id: 15,
         title: "Tailwind Css",
         skillImg: TailwindCss
     },
-    {
+    /* {
         id: 16,
         title: "SupaBase",
         skillImg: supaBase
-    },
+    }, */
 ]
 
 
