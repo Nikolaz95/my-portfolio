@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 
 //import css
 import "./Contact.css"
+import Button from '../../Layouts/Buttons/Button';
+import sendEmail from "../../assets/images/iconSend.png"
+import Image from '../../Layouts/Images/Image';
 
 const Contact = ({ contactRef }) => {
     const form = useRef();
@@ -88,8 +91,14 @@ const Contact = ({ contactRef }) => {
                                 required: "This field is required",
                             })} />
                         <p className='errorTextContact'>{errors.message?.message}</p>
+                        <div className="btnContent">
+                            <Button variant="submit">
+                                <p>Send</p>
+                                <Image src={sendEmail} variant='submitEmail' />
+                            </Button>
 
-                        <input type="submit" />
+                        </div>
+
                     </form>
                 </div>
             </section>

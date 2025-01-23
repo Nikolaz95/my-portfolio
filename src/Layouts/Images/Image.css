@@ -1,0 +1,16 @@
+.image-component {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Variant Styles */
+
+.submitEmail, .download {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+}

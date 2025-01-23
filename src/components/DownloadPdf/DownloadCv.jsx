@@ -6,6 +6,8 @@ import "./DownloadCv.css"
 import download from "../../assets/icon-update.png";
 
 import CV from "../../assets/NikolaZovkoCV.pdf";
+import Button from '../../Layouts/Buttons/Button';
+import Image from '../../Layouts/Images/Image';
 
 
 const DownloadCv = () => {
@@ -20,9 +22,10 @@ const DownloadCv = () => {
     };
     return (
         <section>
-            <button onClick={onButtonClick} className='btnSection'>
-                Download Cv <img src={download} width={50} height={50} alt="" title='download Cv' />
-            </button>
+            <Button onClick={onButtonClick} className='btnSection' variant='downloadBtn'>
+                <p>My Cv</p>
+                <Image src={download} variant='download' title='download Cv' />
+            </Button>
         </section>
     )
 }
