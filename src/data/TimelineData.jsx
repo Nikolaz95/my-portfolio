@@ -36,12 +36,12 @@ let timelineData = [
     },
     {
         id: 2,
-        title: "Frontendutvecklare, Lia Praktik",
-        company: "Wacoco HQ",
+        title: "Frontendutvecklare, Intership",
+        company: "Wacoco AB",
         location: "Stockholm, Sverige",
         description:
-            "During my internship at Wacoco HQ AB,",
-        date: "2025 Oktober - ",
+            "During my internship at Wacoco HQ AB, Working on wacoco website ReactJS and React node. Working on React js components and Patterns.",
+        date: "2024 Juni - ",
         icon: "work",
     },
 ];
