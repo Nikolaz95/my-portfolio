@@ -18,6 +18,7 @@ import nodeJs from '../assets/skill-img/icon-nodejs.png';
 import mongoDb from '../assets/skill-img/icon-mongoDB.png';
 import materialUI from '../assets/skill-img/material-UI.png';
 import postMan from '../assets/skill-img/icon-postman.png';
+import vitest from '../assets/skill-img/vitest-logo.png';
 
 
 const MySkills = [
@@ -91,11 +92,11 @@ const MySkills = [
         title: "GitBash",
         skillImg: GitBash
     },
-    /* {
+    {
         id: 14,
-        title: "React qury",
-        skillImg: rjQuery
-    }, */
+        title: "React Vitest",
+        skillImg: vitest
+    },
     {
         id: 15,
         title: "Tailwind Css",
