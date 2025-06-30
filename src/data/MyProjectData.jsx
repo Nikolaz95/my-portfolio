@@ -9,6 +9,7 @@ import Projekt4 from '../assets/work-img/work-6.png';
 import Projekt5 from '../assets/work-img/Country-App.png';
 import Projekt6 from '../assets/work-img/Space-Tourism .png';
 import Projekt7 from '../assets/work-img/work-7.png';
+import Projekt8 from '../assets/work-img/work-8.png';
 
 import ComingSoon from '../assets/work-img/work-1.png';
 
@@ -26,6 +27,10 @@ import rjRedux from '../assets/images/redux.png';
 import supaBase from '../assets/images/icon-supabase.png';
 import rjQuery from '../assets/images/reactqury.png';
 import storybook from '../assets/skill-img/Storybook.png';
+import mongoDb from '../assets/skill-img/icon-mongoDB.png';
+import expressJs from '../assets/skill-img/expressJs.png';
+import nodeJs from '../assets/skill-img/icon-nodejs.png';
+
 
 
 const MyProjectData = [
@@ -106,6 +111,15 @@ const MyProjectData = [
 
     {
         id: 8,
+        title: "MERN STACK MOVIE APP",
+        ImgProject: Projekt8,
+        description: "A full-stack web application built using the MERN stack for movie enthusiasts. The app integrates with the TMDB API to fetch up-to-date movie and TV show information. Users can create personal accounts, manage their profiles, and interact with content through features like commenting, favoriting, and wishlisting.",
+        skills: [ReactJS, mongoDb, rjRedux, expressJs, nodeJs],
+        demo: "",
+        source: "https://github.com/Nikolaz95/MERN-MovieData"
+    },
+    {
+        id: 9,
         title: "Coming Soon",
         ImgProject: ComingSoon,
         description: "Description for another project...",

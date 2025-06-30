@@ -19,6 +19,7 @@ import mongoDb from '../assets/skill-img/icon-mongoDB.png';
 import materialUI from '../assets/skill-img/material-UI.png';
 import postMan from '../assets/skill-img/icon-postman.png';
 import vitest from '../assets/skill-img/vitest-logo.png';
+import expressJs from '../assets/skill-img/expressJs.png';
 
 
 const MySkills = [
@@ -102,11 +103,16 @@ const MySkills = [
         title: "Tailwind Css",
         skillImg: TailwindCss
     },
-    /* {
+    {
         id: 16,
         title: "SupaBase",
         skillImg: supaBase
-    }, */
+    },
+    {
+        id: 17,
+        title: "Expres.JS",
+        skillImg: expressJs
+    },
 ]
 
 
