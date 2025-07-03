@@ -115,7 +115,7 @@ const MyProjectData = [
         ImgProject: Projekt8,
         description: "A full-stack web application built using the MERN stack for movie enthusiasts. The app integrates with the TMDB API to fetch up-to-date movie and TV show information. Users can create personal accounts, manage their profiles, and interact with content through features like commenting, favoriting, and wishlisting.",
         skills: [ReactJS, mongoDb, rjRedux, expressJs, nodeJs],
-        demo: "",
+        demo: "https://mern-movie-cpbh.onrender.com/",
         source: "https://github.com/Nikolaz95/MERN-MovieData"
     },
     {
